@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: system-ui, -apple-system, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background: var(--color-bg);
+	color: var(--color-fg);
+	min-height: 100dvh;
+	transition: background 0.3s ease, color 0.3s ease;
+}
+
+button {
+	font: inherit;
+	color: inherit;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+[data-idle='true'] *,
+[data-no-anim='true'] * {
+	animation-play-state: paused !important;
+	transition-duration: 0s !important;
+}
+
+@media (min-width: 1024px) {
+	.game-board .grid polygon {
+		stroke-width: 0.25;
+	}
+	.game-board .building polygon,
+	.game-board .building line {
+		stroke-width: 0.2;
+	}
+	.game-board .light-ring {
+		stroke-width: 0.3;
+	}
+	.game-board .pyramid polygon {
+		stroke-width: 0.4;
+	}
+}

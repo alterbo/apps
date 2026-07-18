@@ -1,0 +1,60 @@
+:root {
+	/* Base palette */
+	--gray-98: hsl(0, 0%, 96%);
+	--gray-90: hsl(0, 0%, 90%);
+	--gray-80: hsl(0, 0%, 80%);
+	--gray-60: hsl(0, 0%, 60%);
+	--gray-40: hsl(0, 0%, 40%);
+	--gray-20: hsl(0, 0%, 20%);
+	--gray-15: hsl(0, 0%, 15%);
+	--gray-10: hsl(0, 0%, 10%);
+	--gray-05: hsl(0, 0%, 5%);
+
+	/* Glow */
+	--glow-color: hsl(45, 30%, 70%);
+	--glow-soft: 0 0 12px hsl(45, 20%, 60% / 0.4);
+	--glow-strong: 0 0 24px hsl(45, 30%, 70% / 0.6);
+}
+
+[data-theme='dark'] {
+	--color-bg: var(--gray-10);
+	--color-surface: var(--gray-15);
+	--color-fg: var(--gray-98);
+	--color-muted: var(--gray-60);
+	--color-border: var(--gray-20);
+	--color-control-bg: hsl(0, 0%, 16% / 0.95);
+	--color-control-border: var(--gray-60);
+	--color-control-disabled-fg: var(--gray-40);
+	--color-control-disabled-bg: hsl(0, 0%, 12% / 0.6);
+	--color-hand: hsl(0, 60%, 55%);
+	--color-building-stroke: var(--gray-40);
+	--color-building-fill: var(--gray-15);
+	--color-building-top: var(--gray-20);
+	--color-building-side-dark: var(--gray-10);
+	--color-grid: hsl(0, 0%, 100% / 0.06);
+	--color-void: var(--gray-05);
+	--color-light-center: hsl(45, 15%, 95% / 0.12);
+	--color-light-edge: hsl(0, 0%, 100% / 0);
+}
+
+[data-theme='light'] {
+	--glow-color: hsl(45, 70%, 42%);
+	--color-bg: var(--gray-98);
+	--color-surface: hsl(0, 0%, 100%);
+	--color-fg: var(--gray-10);
+	--color-muted: var(--gray-40);
+	--color-border: var(--gray-90);
+	--color-control-bg: hsl(0, 0%, 100% / 0.95);
+	--color-control-border: var(--gray-40);
+	--color-control-disabled-fg: var(--gray-60);
+	--color-control-disabled-bg: hsl(0, 0%, 95% / 0.6);
+	--color-hand: hsl(0, 50%, 40%);
+	--color-building-stroke: var(--gray-60);
+	--color-building-fill: var(--gray-90);
+	--color-building-top: var(--gray-98);
+	--color-building-side-dark: var(--gray-80);
+	--color-grid: hsl(0, 0%, 0% / 0.06);
+	--color-void: var(--gray-98);
+	--color-light-center: hsl(45, 20%, 50% / 0.08);
+	--color-light-edge: hsl(0, 0%, 0% / 0);
+}

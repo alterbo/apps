@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <title>pyramid</title>
+  <polygon points="64,8 120,112 8,112" fill="#1a1a2e" />
+  <polygon points="64,8 120,112 64,112" fill="#16213e" />
+  <polygon points="64,52 80,112 48,112" fill="#e2b04a" opacity="0.9" />
+</svg>
