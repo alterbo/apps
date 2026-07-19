@@ -4,6 +4,7 @@
   "scripts": {
     "dev:illuminati": "pnpm --filter illuminati dev",
     "dev:weather-app": "pnpm --filter weather-app dev",
+    "dev:weather-app:netlify": "pnpm --dir apps/weather-app dev:netlify",
     "build:all": "pnpm -r build",
     "check:all": "pnpm -r check"
   },
