@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+  --arc-left-1: 0 50% 0 0;
+  --arc-left-2: 0 35% 0 0;
+  --arc-left-3: 0 10% 0 0;
+  --arc-right-1: 10% 0 0 0;
+  --arc-right-2: 35% 0 0 0;
+  --arc-right-3: 50% 0 0 0;
+}
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Cinzel', serif;
+  margin: 0;
+}
+
+#app {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100svh;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.column svg {
+  fill: #242424;
+  stroke: #bfd3ed;
+}
+
+.bg-vertical-stripes {
+  animation: slide 1s linear;
+  background-image: linear-gradient(to right, #778496 1px, #242424 1px);
+  background-size: 20% 100%;
+}
+@media (prefers-color-scheme: light) {
+  .bg-vertical-stripes {
+    background-image: linear-gradient(to right, #afc1d9 1px, white 1px);
+  }
+}
+@media (prefers-reduced-motion) {
+  .bg-vertical-stripes {
+    animation: none;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .column svg {
+    fill: white;
+    stroke: #57616f;
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  15% {
+    background-position: 10% 0;
+  }
+  85% {
+    background-position: 90% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
