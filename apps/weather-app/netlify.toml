@@ -4,7 +4,7 @@
   publish = "apps/weather-app/dist"
 
 [functions]
-  directory = "netlify/functions"
+  directory = "apps/weather-app/netlify/functions"
   node_bundler = "esbuild"
 
 [dev]
