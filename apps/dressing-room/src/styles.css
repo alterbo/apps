@@ -1,0 +1,87 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --neutral-bg: hsl(0 0% 14%);
+  --neutral-surface-1: hsl(0 0% 10%);
+  --neutral-surface-2: hsl(0 0% 12%);
+  --neutral-border: hsl(0 0% 100%);
+
+  --neutral-text: hsl(0 0% 100%);
+  --neutral-text-strong: hsl(0 0% 98%);
+  --neutral-text-muted: hsl(0 0% 100%);
+
+  --brand-500: hsl(196, 68%, 55%);
+  --brand-600: hsl(196, 68%, 66%);
+
+  --color-bg: var(--neutral-bg);
+  --color-surface-1: var(--neutral-surface-1);
+  --color-surface-2: var(--neutral-surface-2);
+  --color-border: var(--neutral-border);
+
+  --color-link: var(--brand-500);
+  --color-link-hover: var(--brand-600);
+
+  --color-text: var(--neutral-text);
+  --color-text-strong: var(--neutral-text-strong);
+  --color-text-muted: var(--neutral-text-muted);
+
+  --color-button-bg: var(--color-surface-1);
+  --color-button-bg-hover: var(--color-surface-2);
+  --color-button-text: var(--color-text);
+  --color-button-icon: var(--color-text-strong);
+  --color-button-border: transparent;
+  --color-button-border-hover: hsl(0 0% 0%);
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+h1 {
+  font-family: 'Bodoni', serif;
+  font-size: clamp(2rem, 6vw, 3.75rem);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --neutral-bg: hsl(0 0% 100%);
+    --neutral-surface-1: hsl(0 0% 98%);
+    --neutral-surface-2: hsl(0 0% 94%);
+    --neutral-border: hsl(208 37% 20%);
+
+    --neutral-text: hsl(208 37% 20%);
+    --neutral-text-strong: hsl(0 0% 10%);
+    --neutral-text-muted: hsl(208 20% 35%);
+
+    --color-focus-ring: hsl(var(--hue-brand) 100% 60%);
+
+    --color-button-border-hover: hsl(208 37% 20%);
+  }
+
+  a {
+    :hover,
+    :focus-visible {
+      color: var(--color-link-hover);
+    }
+  }
+}
